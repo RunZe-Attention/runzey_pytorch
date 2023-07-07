@@ -1,0 +1,11 @@
+import torch
+a = torch.rand(4,3,28,28)
+print("示例1:",a.shape)
+print("示例2:",a[0].shape)
+print("示例3:",a[0,0].shape)
+print("示例4:",a[0,0,2,4])
+print("示例5:",a[0:2].shape)
+print("示例6:",a[:2,1:].shape)
+print("示例7:",a[:2,-1:].shape)
+print("示例8:",a[:2,1:,0:28:2,0:28:2].shape)
+print("示例9:",a[:2,1:,::2,::2].shape)
